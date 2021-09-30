@@ -1,0 +1,380 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_DGS Q2
+U 1 1 60FFCF0B
+P 6350 2700
+F 0 "Q2" H 6554 2746 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 6554 2655 50  0000 L CNN
+F 2 "KiCADPersonalLibs:SI4776DY" H 6550 2800 50  0001 C CNN
+F 3 "~" H 6350 2700 50  0001 C CNN
+F 4 "SI4776DY-T1-GE3CT-ND" H 6350 2700 50  0001 C CNN "DigikeyNum"
+	1    6350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR020
+U 1 1 610006A1
+P 6450 2250
+F 0 "#PWR020" H 6450 2100 50  0001 C CNN
+F 1 "VBUS" H 6465 2423 50  0000 C CNN
+F 2 "" H 6450 2250 50  0001 C CNN
+F 3 "" H 6450 2250 50  0001 C CNN
+	1    6450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2250 6450 2500
+$Comp
+L power:GND #PWR021
+U 1 1 6100A155
+P 6450 4150
+F 0 "#PWR021" H 6450 3900 50  0001 C CNN
+F 1 "GND" H 6455 3977 50  0000 C CNN
+F 2 "" H 6450 4150 50  0001 C CNN
+F 3 "" H 6450 4150 50  0001 C CNN
+	1    6450 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4150 6450 3950
+Text Label 6500 3250 0    50   ~ 0
+MOTOR+
+Wire Wire Line
+	6450 2900 6450 3250
+Connection ~ 6450 3250
+Wire Wire Line
+	6450 3250 6450 3550
+$Comp
+L Device:Q_NMOS_DGS Q3
+U 1 1 610090BA
+P 6350 3750
+F 0 "Q3" H 6554 3796 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 6554 3705 50  0000 L CNN
+F 2 "KiCADPersonalLibs:SI4776DY" H 6550 3850 50  0001 C CNN
+F 3 "~" H 6350 3750 50  0001 C CNN
+F 4 "SI4776DY-T1-GE3CT-ND" H 6350 3750 50  0001 C CNN "DigikeyNum"
+	1    6350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q4
+U 1 1 610223D5
+P 8750 2700
+F 0 "Q4" H 8954 2746 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 8954 2655 50  0000 L CNN
+F 2 "KiCADPersonalLibs:SI4776DY" H 8950 2800 50  0001 C CNN
+F 3 "~" H 8750 2700 50  0001 C CNN
+F 4 "SI4776DY-T1-GE3CT-ND" H 8750 2700 50  0001 C CNN "DigikeyNum"
+	1    8750 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR022
+U 1 1 610223E1
+P 8650 2250
+F 0 "#PWR022" H 8650 2100 50  0001 C CNN
+F 1 "VBUS" H 8665 2423 50  0000 C CNN
+F 2 "" H 8650 2250 50  0001 C CNN
+F 3 "" H 8650 2250 50  0001 C CNN
+	1    8650 2250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2250 8650 2500
+$Comp
+L power:GND #PWR023
+U 1 1 610223E8
+P 8650 4150
+F 0 "#PWR023" H 8650 3900 50  0001 C CNN
+F 1 "GND" H 8655 3977 50  0000 C CNN
+F 2 "" H 8650 4150 50  0001 C CNN
+F 3 "" H 8650 4150 50  0001 C CNN
+	1    8650 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4150 8650 3950
+Text Label 8600 3250 2    50   ~ 0
+MOTOR-
+Wire Wire Line
+	8650 2900 8650 3250
+Connection ~ 8650 3250
+Wire Wire Line
+	8650 3250 8650 3550
+Text GLabel 5850 2700 0    50   Input ~ 0
+TIM1_CH1
+Text GLabel 5850 3750 0    50   Input ~ 0
+TIM1_CH2
+Text GLabel 9250 2700 2    50   Input ~ 0
+TIM1_CH3
+Text GLabel 9250 3750 2    50   Input ~ 0
+TIM1_CH4
+Wire Wire Line
+	6150 2700 5950 2700
+Wire Wire Line
+	6150 3750 5950 3750
+Wire Wire Line
+	8950 2700 9000 2700
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 610A45E4
+P 2250 3300
+F 0 "J3" H 2168 3067 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2168 3066 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2250 3300 50  0001 C CNN
+F 3 "~" H 2250 3300 50  0001 C CNN
+F 4 "277-1667-ND" H 2250 3300 50  0001 C CNN "DigikeyNum"
+	1    2250 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VBUS #PWR017
+U 1 1 610A54B2
+P 3450 3000
+F 0 "#PWR017" H 3450 2850 50  0001 C CNN
+F 1 "VBUS" H 3465 3173 50  0000 C CNN
+F 2 "" H 3450 3000 50  0001 C CNN
+F 3 "" H 3450 3000 50  0001 C CNN
+	1    3450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3300 2450 3450
+Wire Wire Line
+	4500 3000 4500 3100
+$Comp
+L power:+3V3 #PWR?
+U 1 1 610A4016
+P 4500 3000
+AR Path="/610A4016" Ref="#PWR?"  Part="1" 
+AR Path="/60FF607A/610A4016" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 4500 2850 50  0001 C CNN
+F 1 "+3V3" H 4515 3173 50  0000 C CNN
+F 2 "" H 4500 3000 50  0001 C CNN
+F 3 "" H 4500 3000 50  0001 C CNN
+	1    4500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3100 2450 3200
+Wire Wire Line
+	3450 3000 3450 3100
+Text Notes 2400 4000 0    50   ~ 0
+Reverse Polarity Protection
+Connection ~ 3450 3100
+Wire Wire Line
+	3450 3100 3650 3100
+Wire Wire Line
+	4500 3100 4250 3100
+Wire Wire Line
+	3450 3450 3200 3450
+Wire Wire Line
+	3450 3600 3450 3450
+$Comp
+L power:GND #PWR?
+U 1 1 610AB181
+P 3450 3600
+AR Path="/610AB181" Ref="#PWR?"  Part="1" 
+AR Path="/60FF607A/610AB181" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 3450 3350 50  0001 C CNN
+F 1 "GND" H 3455 3427 50  0000 C CNN
+F 2 "" H 3450 3600 50  0001 C CNN
+F 3 "" H 3450 3600 50  0001 C CNN
+	1    3450 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 3450
+Wire Wire Line
+	3450 3450 3950 3450
+Wire Wire Line
+	3950 3450 3950 3400
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U?
+U 1 1 610A4002
+P 3950 3100
+AR Path="/610A4002" Ref="U?"  Part="1" 
+AR Path="/60FF607A/610A4002" Ref="U2"  Part="1" 
+F 0 "U2" H 3950 3342 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 3950 3251 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3950 3300 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 4050 2850 50  0001 C CNN
+F 4 "RC1117S33TCT-ND" H 3950 3100 50  0001 C CNN "DigikeyNum"
+	1    3950 3100
+	1    0    0    -1  
+$EndComp
+Text Notes 3750 3650 0    50   ~ 0
+15-3V3 Regulator
+Wire Notes Line
+	2000 2550 4750 2550
+Wire Notes Line
+	4750 2550 4750 4200
+Wire Notes Line
+	4750 4200 2000 4200
+Wire Notes Line
+	2000 4200 2000 2550
+Wire Notes Line
+	5150 4700 10000 4700
+Wire Notes Line
+	10000 4700 10000 1750
+Wire Notes Line
+	10000 1750 5150 1750
+Wire Notes Line
+	5150 1750 5150 4700
+$Comp
+L Device:C C6
+U 1 1 60FD1F87
+P 3200 3250
+F 0 "C6" H 3315 3296 50  0000 L CNN
+F 1 "1uF" H 3315 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3238 3100 50  0001 C CNN
+F 3 "~" H 3200 3250 50  0001 C CNN
+F 4 "587-3501-1-ND" H 3200 3250 50  0001 C CNN "DigikeyNum"
+	1    3200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3100 3450 3100
+Wire Wire Line
+	3200 3400 3200 3450
+Connection ~ 3200 3100
+$Comp
+L Connector:TestPoint TP5
+U 1 1 60FD782C
+P 5950 2500
+F 0 "TP5" H 6008 2618 50  0000 L CNN
+F 1 "TestPoint" H 6008 2527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 6150 2500 50  0001 C CNN
+F 3 "~" H 6150 2500 50  0001 C CNN
+F 4 "36-5268-ND" H 5950 2500 50  0001 C CNN "DigikeyNum"
+	1    5950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2500 5950 2700
+Connection ~ 5950 2700
+Wire Wire Line
+	5950 2700 5850 2700
+Connection ~ 5950 3750
+Wire Wire Line
+	5950 3750 5850 3750
+Wire Wire Line
+	5950 3550 5950 3750
+$Comp
+L Connector:TestPoint TP6
+U 1 1 60FD9226
+P 5950 3550
+F 0 "TP6" H 6008 3668 50  0000 L CNN
+F 1 "TestPoint" H 6008 3577 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 6150 3550 50  0001 C CNN
+F 3 "~" H 6150 3550 50  0001 C CNN
+F 4 "36-5268-ND" H 5950 3550 50  0001 C CNN "DigikeyNum"
+	1    5950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 60FDDF55
+P 9000 2500
+F 0 "TP7" H 9058 2618 50  0000 L CNN
+F 1 "TestPoint" H 9058 2527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 9200 2500 50  0001 C CNN
+F 3 "~" H 9200 2500 50  0001 C CNN
+F 4 "36-5268-ND" H 9000 2500 50  0001 C CNN "DigikeyNum"
+	1    9000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2500 9000 2700
+Wire Wire Line
+	8950 3750 9000 3750
+Wire Wire Line
+	9000 3550 9000 3750
+$Comp
+L Connector:TestPoint TP8
+U 1 1 60FDE8F9
+P 9000 3550
+F 0 "TP8" H 9058 3668 50  0000 L CNN
+F 1 "TestPoint" H 9058 3577 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 9200 3550 50  0001 C CNN
+F 3 "~" H 9200 3550 50  0001 C CNN
+F 4 "36-5268-ND" H 9000 3550 50  0001 C CNN "DigikeyNum"
+	1    9000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q5
+U 1 1 610223F4
+P 8750 3750
+F 0 "Q5" H 8954 3796 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 8954 3705 50  0000 L CNN
+F 2 "KiCADPersonalLibs:SI4776DY" H 8950 3850 50  0001 C CNN
+F 3 "~" H 8750 3750 50  0001 C CNN
+F 4 "SI4776DY-T1-GE3CT-ND" H 8750 3750 50  0001 C CNN "DigikeyNum"
+	1    8750 3750
+	-1   0    0    -1  
+$EndComp
+Connection ~ 9000 2700
+Wire Wire Line
+	9000 2700 9250 2700
+Connection ~ 9000 3750
+Wire Wire Line
+	9000 3750 9250 3750
+Wire Wire Line
+	2450 3100 2800 3100
+Wire Wire Line
+	2800 3150 2800 3100
+Connection ~ 2800 3100
+Wire Wire Line
+	2800 3100 3200 3100
+Wire Wire Line
+	2450 3450 2600 3450
+Wire Wire Line
+	3000 3450 3200 3450
+Connection ~ 3200 3450
+$Comp
+L Device:Q_NMOS_DGS Q1
+U 1 1 610AB818
+P 2800 3350
+F 0 "Q1" V 3050 3500 50  0000 L CNN
+F 1 "Q_NMOS_DGS" V 3150 3100 50  0000 L CNN
+F 2 "KiCADPersonalLibs:SI4776DY" H 3000 3450 50  0001 C CNN
+F 3 "~" H 2800 3350 50  0001 C CNN
+F 4 "SI4776DY-T1-GE3CT-ND" H 2800 3350 50  0001 C CNN "DigikeyNum"
+	1    2800 3350
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 610B757C
+P 7550 3000
+F 0 "J4" H 7468 2767 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 7468 2766 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 7550 3000 50  0001 C CNN
+F 3 "~" H 7550 3000 50  0001 C CNN
+F 4 "277-1667-ND" H 7550 3000 50  0001 C CNN "DigikeyNum"
+	1    7550 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 3250 7550 3200
+Wire Wire Line
+	6450 3250 7550 3250
+Wire Wire Line
+	7650 3250 7650 3200
+Wire Wire Line
+	7650 3250 8650 3250
+$EndSCHEMATC
